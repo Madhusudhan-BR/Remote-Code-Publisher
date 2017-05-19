@@ -1,0 +1,140 @@
+
+                                      CodeAnalysis - Version 1.4
+    ==============================================================================================
+     Thu Apr  6 18:09:21 2017
+     Path: "C:\Users\Madhusudhan\Desktop\project3\project3byme\CodeAnalysisMain\CodeAnalysisMain"
+     Args: *.h, *.cpp, /f, /r
+                                                                               
+                          Functions Exceeding Metric Limits and Public Data
+    ==============================================================================================
+                 file name        type                               name    line    size    cplx
+    -----------------------  ----------  ---------------------------------  ------  ------  ------
+         ActionsAndRules.h    function                           doAction     595      85       6
+         ActionsAndRules.h    function                             doTest     899      74      10
+       ConfigureParser.cpp    function                              Build      89      98       3
+   Cpp11-BlockingQueue.cpp    function                               main      37      52       3
+              DateTime.cpp    function                           DateTime      57      28      15
+             Executive.cpp    function                  processSourceCode     370      95       8
+             Executive.cpp    function                               main     872     135       1
+            FileSystem.cpp    function                               main     769     438      31
+        GrammarHelpers.cpp    function              isFirstArgDeclaration     164      54       2
+        GrammarHelpers.cpp    function                               main     594      59      17
+               NoSqlDb.cpp    function                               main      16     106       4
+                Parser.cpp    function                               main      89      55       8
+            ScopeStack.cpp    function                               main      49      75       1
+             Tokenizer.cpp    function                          nextState     192      81      14
+             Tokenizer.cpp    function                               main     666      79       7
+             Tokenizer.cpp    function                               main     329      61       8
+                Window.cpp    function                    getUserSettings     104      57       4
+                Window.cpp    function                 setUpDisplaysPanel     501      53       1
+                Window.cpp    function              createDisplayModeView     566      54       1
+                Window.cpp    function                    browseForFolder     701      52       5
+                Window.cpp    function                  browseForFolderEx     760      54       6
+           testexecutive.h    function                  processSourceCode     402      78       8
+
+              public data: AbstrSynTree.h : 74 - struct DeclarationNode
+                Scanner :: ITokCollection * pTc = nullptr ; 
+              public data: AbstrSynTree.h : 75 - struct DeclarationNode
+                Access access_ ; 
+              public data: AbstrSynTree.h : 76 - struct DeclarationNode
+                DeclType declType_ ; 
+              public data: AbstrSynTree.h : 77 - struct DeclarationNode
+                std :: string package_ ; 
+              public data: AbstrSynTree.h : 78 - struct DeclarationNode
+                size_t line_ ; 
+              public data: AbstrSynTree.h : 91 - struct ASTNode
+                Type type_ ; 
+              public data: AbstrSynTree.h : 92 - struct ASTNode
+                Type parentType_ ; 
+              public data: AbstrSynTree.h : 93 - struct ASTNode
+                Name name_ ; 
+              public data: AbstrSynTree.h : 94 - struct ASTNode
+                Package package_ ; 
+              public data: AbstrSynTree.h : 95 - struct ASTNode
+                Path path_ ; 
+              public data: AbstrSynTree.h : 96 - struct ASTNode
+                size_t startLineCount_ ; 
+              public data: AbstrSynTree.h : 97 - struct ASTNode
+                size_t endLineCount_ ; 
+              public data: AbstrSynTree.h : 98 - struct ASTNode
+                size_t complexity_ ; 
+              public data: AbstrSynTree.h : 99 - struct ASTNode
+                std :: vector < ASTNode * > children_ ; 
+              public data: AbstrSynTree.h : 100 - struct ASTNode
+                std :: vector < DeclarationNode > decl_ ; 
+              public data: AbstrSynTree.h : 101 - struct ASTNode
+                std :: vector < Scanner :: ITokCollection * > statements_ ; 
+              public data: CppProperties.cpp : 16 - class X
+                Property < std :: string > name ; 
+              public data: CppProperties.cpp : 17 - class X
+                Property < double > isMutable ; 
+              public data: CppProperties.cpp : 18 - class X
+                Property < const double > pi = 3 . 1415927 ; 
+              public data: CppProperties.cpp : 19 - class X
+                Property < const std :: string > constName = "a const name" ; 
+              public data: CppProperties.cpp : 70 - class Y
+                UpperCaseProperty name = "jim" ; 
+              public data: Executive.h : 171 - class CodeAnalysisExecutive
+                std :: string defaultDependency ; 
+              public data: Executive.h : 172 - class CodeAnalysisExecutive
+                std :: string defaultScc ; 
+              public data: Parser.h : 107 - class IRule
+                static const bool Continue = true ; 
+              public data: Parser.h : 108 - class IRule
+                static const bool Stop = false ; 
+              public data: ScopeStack.cpp : 26 - struct element
+                std :: string type ; 
+              public data: ScopeStack.cpp : 27 - struct element
+                std :: string name ; 
+              public data: ScopeStack.cpp : 28 - struct element
+                size_t startLineCount = 0 ; 
+              public data: ScopeStack.cpp : 29 - struct element
+                size_t endLineCount = 0 ; 
+              public data: ScopeStack.cpp : 30 - struct element
+                std :: string path_ ; 
+              public data: Tokenizer.cpp : 34 - struct Context
+                std :: string token ; 
+              public data: Tokenizer.cpp : 35 - struct Context
+                std :: istream * _pIn ; 
+              public data: Utilities.h : 57 - class test
+                std :: vector < std :: string > publicVector ; 
+              public data: Window.h : 102 - struct Settings
+                bool h ; 
+              public data: Window.h : 102 - struct Settings
+                bool cpp ; 
+              public data: Window.h : 102 - struct Settings
+                bool cs ; 
+              public data: Window.h : 103 - struct Settings
+                bool upatt ; 
+              public data: Window.h : 104 - struct Settings
+                bool cl ; 
+              public data: Window.h : 105 - struct Settings
+                bool metrics ; 
+              public data: Window.h : 106 - struct Settings
+                bool ast ; 
+              public data: Window.h : 107 - struct Settings
+                bool slocs ; 
+              public data: Window.h : 108 - struct Settings
+                bool logfile ; 
+              public data: Window.h : 109 - struct Settings
+                bool rslt ; 
+              public data: Window.h : 110 - struct Settings
+                bool demo ; 
+              public data: Window.h : 111 - struct Settings
+                bool dbug ; 
+              public data: stronglyConnectedComp.h : 72 - class Graph
+                NoSQLDB :: NoSqlDb < std :: string > SCC ( std :: unordered_map < int , std :: string > mapFilesFromInt ) ; 
+              public data: typetable.h : 64 - class lineNum
+                int startline = 0 ; 
+              public data: typetable.h : 65 - class lineNum
+                int endline = 0 ; 
+              public data: typetable.h : 72 - class TypeAnal
+                typetable db ; 
+              public data: typetable.h : 74 - class TypeAnal
+                std :: vector < int > tempLineCountVec ; 
+              public data: typetable.h : 76 - class TypeAnal
+                std :: stack < std :: string > namespaceStack ; 
+
+
+    searched   158 dirs
+   processed    75 files

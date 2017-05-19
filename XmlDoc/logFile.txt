@@ -1,0 +1,17 @@
+
+                                      CodeAnalysis - Version 1.4
+    ==============================================================================================
+     Thu Apr  6 17:43:45 2017
+     Path: "C:\Users\Madhusudhan\Desktop\project3\project3byme\CodeAnalysisMain\CodeAnalysisMain\XmlDoc"
+     Args: *.h, *.cpp, /f, /r
+                                                                               
+                          Functions Exceeding Metric Limits and Public Data
+    ==============================================================================================
+                 file name        type                               name    line    size    cplx
+    -----------------------  ----------  ---------------------------------  ------  ------  ------
+             Tokenizer.cpp    function                               main     329      61       8
+
+
+
+    searched    19 dirs
+   processed    13 files

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Test TestExecutive with alternate XML file contents -->
+<courses>
+  <course number="CSE681">Software Modeling &amp; Analysis</course>
+  <course number="CSE686">Internet Programming</course>
+  <course number="CSE687">Object Oriented Design</course>
+  <course number="CSE775">Distributed Objects</course>
+  <course number="CSE776">Design Patterns</course>
+  <course number="CSE784">Software Studio</course>
+</courses>

@@ -1,0 +1,16 @@
+
+                                      CodeAnalysis - Version 1.4
+    ==============================================================================================
+     Wed Apr  5 01:47:56 2017
+     Path: "C:\Users\Madhusudhan\Desktop\project3\project3byme\CodeAnalysisMain\CodeAnalysisMain\DependencyTable"
+     Args: *.h, *.cpp, /f, /r
+                                                                               
+                          Functions Exceeding Metric Limits and Public Data
+    ==============================================================================================
+                 file name        type                               name    line    size    cplx
+    -----------------------  ----------  ---------------------------------  ------  ------  ------
+
+
+
+    searched     4 dirs
+   processed     2 files

@@ -1,0 +1,26 @@
+
+                                      CodeAnalysis - Version 1.4
+    ==============================================================================================
+     Wed Apr  5 02:16:16 2017
+     Path: "C:\Users\Madhusudhan\Desktop\project3\project3byme\CodeAnalysisMain\CodeAnalysisMain\Tokenizer"
+     Args: *.h, *.cpp, /f, /r
+                                                                               
+                          Functions Exceeding Metric Limits and Public Data
+    ==============================================================================================
+                 file name        type                               name    line    size    cplx
+    -----------------------  ----------  ---------------------------------  ------  ------  ------
+             Tokenizer.cpp    function                          nextState     192      81      14
+             Tokenizer.cpp    function                               main     666      79       7
+
+              public data: Tokenizer.h : 94 - namespace Scanner
+                class ConsumeState ; 
+              public data: Tokenizer.h : 95 - namespace Scanner
+                struct Context ; 
+              public data: Tokenizer.cpp : 34 - struct Context
+                std :: string token ; 
+              public data: Tokenizer.cpp : 35 - struct Context
+                std :: istream * _pIn ; 
+
+
+    searched     3 dirs
+   processed     2 files

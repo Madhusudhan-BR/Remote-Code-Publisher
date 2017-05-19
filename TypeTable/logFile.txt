@@ -1,0 +1,27 @@
+
+                                      CodeAnalysis - Version 1.4
+    ==============================================================================================
+     Wed Apr  5 01:49:26 2017
+     Path: "C:\Users\Madhusudhan\Desktop\project3\project3byme\CodeAnalysisMain\CodeAnalysisMain\TypeTable"
+     Args: *.h, *.cpp, /f, /r
+                                                                               
+                          Functions Exceeding Metric Limits and Public Data
+    ==============================================================================================
+                 file name        type                               name    line    size    cplx
+    -----------------------  ----------  ---------------------------------  ------  ------  ------
+               typetable.h    function                                DFS     112      51      10
+
+              public data: typetable.h : 63 - class lineNum
+                int startline ; 
+              public data: typetable.h : 64 - class lineNum
+                int endline ; 
+              public data: typetable.h : 71 - class TypeAnal
+                typetable db ; 
+              public data: typetable.h : 73 - class TypeAnal
+                std :: vector < int > tempLineCountVec ; 
+              public data: typetable.h : 75 - class TypeAnal
+                std :: stack < std :: string > namespaceStack ; 
+
+
+    searched     4 dirs
+   processed     2 files

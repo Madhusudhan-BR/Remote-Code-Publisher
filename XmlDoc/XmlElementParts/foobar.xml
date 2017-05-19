@@ -1,0 +1,12 @@
+
+<root>
+  <child1>
+    child1 body
+  </child1>
+  <child2>
+    <grandchild21>
+      gc body
+    </grandchild21>
+    some text
+  </child2>
+</root>

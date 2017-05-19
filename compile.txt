@@ -1,0 +1,139 @@
+
+C:\Users\Madhusudhan\Desktop\Extremely Important copy\nextversion\CodeAnalysisMain\CodeAnalysisMain>devenv CodeAnalyzerEx.sln /rebuild debug 
+
+Microsoft Visual Studio 2015 Version 14.0.25420.1.
+Copyright (C) Microsoft Corp. All rights reserved.
+1>------ Rebuild All started: Project: XmlDocument, Configuration: Debug x64 ------
+2>------ Rebuild All started: Project: Parser, Configuration: Debug x64 ------
+3>------ Rebuild All started: Project: ScopeStack, Configuration: Debug x64 ------
+4>------ Rebuild All started: Project: Tokenizer, Configuration: Debug Win32 ------
+5>------ Rebuild All started: Project: SemiExp, Configuration: Debug x64 ------
+6>------ Rebuild All started: Project: FileMgr, Configuration: Debug Win32 ------
+7>------ Rebuild All started: Project: Logger, Configuration: Debug x64 ------
+8>------ Rebuild All started: Project: Utilities, Configuration: Debug x64 ------
+3>  ScopeStack.cpp
+6>  FileMgr.cpp
+1>  XmlDocument.cpp
+7>  Logger.cpp
+4>  Tokenizer.cpp
+8>  Utilities.cpp
+2>  Parser.cpp
+5>  SemiExp.cpp
+1>  XmlParser.cpp
+3>  Utilities.cpp
+4>  Utilities.cpp
+6>  FileSystem.cpp
+5>  Utilities.cpp
+8>  Utilities.vcxproj -> C:\Users\Madhusudhan\Desktop\Extremely Important copy\nextversion\CodeAnalysisMain\CodeAnalysisMain\x64\Debug\Utilities.lib
+7>  Utilities.cpp
+3>  Logger.cpp
+1>  XmlElement.cpp
+9>------ Rebuild All started: Project: AbstractSyntaxTree, Configuration: Debug x64 ------
+9>  AbstrSynTree.cpp
+4>  Generating Code...
+2>  ConfigureParser.cpp
+5>  Tokenizer.cpp
+4>  Tokenizer.vcxproj -> C:\Users\Madhusudhan\Desktop\Extremely Important copy\nextversion\CodeAnalysisMain\CodeAnalysisMain\Debug\Tokenizer.lib
+7>  Cpp11-BlockingQueue.cpp
+1>  xmlElementParts.cpp
+10>------ Rebuild All started: Project: FileSystem, Configuration: Debug x64 ------
+5>  Generating Code...
+3>  Generating Code...
+6>  Generating Code...
+10>  FileSystem.cpp
+9>  Utilities.cpp
+1>  Tokenizer.cpp
+7>  Generating Code...
+5>  SemiExp.vcxproj -> C:\Users\Madhusudhan\Desktop\Extremely Important copy\nextversion\CodeAnalysisMain\CodeAnalysisMain\x64\Debug\SemiExp.lib
+11>------ Rebuild All started: Project: Cpp11-BlockingQueue, Configuration: Debug x64 ------
+7>Cpp11-BlockingQueue.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+11>  Cpp11-BlockingQueue.cpp
+7>  Logger.vcxproj -> C:\Users\Madhusudhan\Desktop\Extremely Important copy\nextversion\CodeAnalysisMain\CodeAnalysisMain\x64\Debug\Logger.lib
+2>  ActionsAndRules.cpp
+9>  Logger.cpp
+1>  Generating Code...
+12>------ Rebuild All started: Project: TestFiles, Configuration: Debug x64 ------
+12>  Test2.cpp
+6>  FileMgr.vcxproj -> C:\Users\Madhusudhan\Desktop\Extremely Important copy\nextversion\CodeAnalysisMain\CodeAnalysisMain\Debug\FileMgr.lib
+1>  XmlDocument.vcxproj -> C:\Users\Madhusudhan\Desktop\Extremely Important copy\nextversion\CodeAnalysisMain\CodeAnalysisMain\x64\Debug\XmlDocument.lib
+13>------ Rebuild All started: Project: TestFiles-CS, Configuration: Debug Any CPU ------
+10>  FileSystem.vcxproj -> C:\Users\Madhusudhan\Desktop\Extremely Important copy\nextversion\CodeAnalysisMain\CodeAnalysisMain\x64\Debug\FileSystem.lib
+14>------ Rebuild All started: Project: CodeAnalyzer, Configuration: Debug x64 ------
+11>  Cpp11-BlockingQueue.vcxproj -> C:\Users\Madhusudhan\Desktop\Extremely Important copy\nextversion\CodeAnalysisMain\CodeAnalysisMain\x64\Debug\Cpp11-BlockingQueue.lib
+15>------ Rebuild All started: Project: GrammarHelpers, Configuration: Debug x64 ------
+14>  Executive.cpp
+13>  TestFiles-CS -> C:\Users\Madhusudhan\Desktop\Extremely Important copy\nextversion\CodeAnalysisMain\CodeAnalysisMain\TestFiles-CS\bin\Debug\TestFiles-CS.exe
+16>------ Rebuild All started: Project: TypeTable, Configuration: Debug x64 ------
+15>  GrammarHelpers.cpp
+16>  typetable.cpp
+9>  Generating Code...
+17>------ Rebuild All started: Project: DependencyTable, Configuration: Debug x64 ------
+12>  Test1.cpp
+17>  Source.cpp
+2>  Utilities.cpp
+3>  ScopeStack.vcxproj -> C:\Users\Madhusudhan\Desktop\Extremely Important copy\nextversion\CodeAnalysisMain\CodeAnalysisMain\x64\Debug\ScopeStack.lib
+9>  AbstractSyntaxTree.vcxproj -> C:\Users\Madhusudhan\Desktop\Extremely Important copy\nextversion\CodeAnalysisMain\CodeAnalysisMain\x64\Debug\AbstractSyntaxTree.lib
+18>------ Rebuild All started: Project: StrongConnnectedComponent, Configuration: Debug x64 ------
+12>  Utilities.cpp
+15>  Utilities.cpp
+19>------ Rebuild All started: Project: Convert, Configuration: Debug x64 ------
+18>  Source.cpp
+2>  Tokenizer.cpp
+19>  Convert.cpp
+12>  Tokenizer.cpp
+15>  Tokenizer.cpp
+2>  SemiExp.cpp
+19>  Convert.vcxproj -> C:\Users\Madhusudhan\Desktop\Extremely Important copy\nextversion\CodeAnalysisMain\CodeAnalysisMain\x64\Debug\Convert.lib
+12>  SemiExp.cpp
+15>  SemiExp.cpp
+20>------ Rebuild All started: Project: NoSqlDb, Configuration: Debug x64 ------
+2>  ScopeStack.cpp
+2>  Logger.cpp
+20>  NoSqlDb.cpp
+14>  DepAnal.cpp
+16>  TypeTable.vcxproj -> C:\Users\Madhusudhan\Desktop\Extremely Important copy\nextversion\CodeAnalysisMain\CodeAnalysisMain\x64\Debug\TypeTable.lib
+14>  Utilities.cpp
+12>  Generating Code...
+15>  Logger.cpp
+21>------ Rebuild All started: Project: Display, Configuration: Debug x64 ------
+17>  DependencyTable.vcxproj -> C:\Users\Madhusudhan\Desktop\Extremely Important copy\nextversion\CodeAnalysisMain\CodeAnalysisMain\x64\Debug\DependencyTable.lib
+21>  display.cpp
+18>  StrongConnnectedComponent.vcxproj -> C:\Users\Madhusudhan\Desktop\Extremely Important copy\nextversion\CodeAnalysisMain\CodeAnalysisMain\x64\Debug\StrongConnnectedComponent.lib
+22>------ Rebuild All started: Project: CppProperties, Configuration: Debug x64 ------
+20>  DateTime.cpp
+22>  CppProperties.cpp
+14>  Tokenizer.cpp
+22>  CppProperties.vcxproj -> C:\Users\Madhusudhan\Desktop\Extremely Important copy\nextversion\CodeAnalysisMain\CodeAnalysisMain\x64\Debug\CppProperties.lib
+23>------ Rebuild All started: Project: VisualCodeAnalyzer, Configuration: Debug x64 ------
+2>  GrammarHelpers.cpp
+14>  SemiExp.cpp
+20>  Generating Code...
+12>  TestFiles.vcxproj -> C:\Users\Madhusudhan\Desktop\Extremely Important copy\nextversion\CodeAnalysisMain\CodeAnalysisMain\x64\Debug\TestFiles.lib
+15>  Generating Code...
+23>  Window.cpp
+2>  FileSystem.cpp
+20>  NoSqlDb.vcxproj -> C:\Users\Madhusudhan\Desktop\Extremely Important copy\nextversion\CodeAnalysisMain\CodeAnalysisMain\x64\Debug\NoSqlDb.lib
+21>  Display.vcxproj -> C:\Users\Madhusudhan\Desktop\Extremely Important copy\nextversion\CodeAnalysisMain\CodeAnalysisMain\x64\Debug\Display.lib
+14>  ScopeStack.cpp
+14>  Parser.cpp
+15>  GrammarHelpers.vcxproj -> C:\Users\Madhusudhan\Desktop\Extremely Important copy\nextversion\CodeAnalysisMain\CodeAnalysisMain\x64\Debug\GrammarHelpers.lib
+23>  .NETFramework,Version=v4.0.AssemblyAttributes.cpp
+2>  AbstrSynTree.cpp
+23>  GUI.vcxproj -> C:\Users\Madhusudhan\Desktop\Extremely Important copy\nextversion\CodeAnalysisMain\CodeAnalysisMain\x64\Debug\VisualCodeAnalyzer.exe
+23>  GUI.vcxproj -> C:\Users\Madhusudhan\Desktop\Extremely Important copy\nextversion\CodeAnalysisMain\CodeAnalysisMain\x64\Debug\VisualCodeAnalyzer.pdb (Full PDB)
+14>  ConfigureParser.cpp
+2>  Generating Code...
+2>  Parser.vcxproj -> C:\Users\Madhusudhan\Desktop\Extremely Important copy\nextversion\CodeAnalysisMain\CodeAnalysisMain\x64\Debug\Parser.lib
+14>  ActionsAndRules.cpp
+14>  Logger.cpp
+14>  GrammarHelpers.cpp
+14>  FileSystem.cpp
+14>  FileMgr.cpp
+14>  AbstrSynTree.cpp
+14>  Generating Code...
+14>  Executive.vcxproj -> C:\Users\Madhusudhan\Desktop\Extremely Important copy\nextversion\CodeAnalysisMain\CodeAnalysisMain\x64\Debug\CodeAnalyzer.lib
+24>------ Rebuild All started: Project: TestExecutive, Configuration: Debug x64 ------
+24>  executive.cpp
+24>  TestExecutive.vcxproj -> C:\Users\Madhusudhan\Desktop\Extremely Important copy\nextversion\CodeAnalysisMain\CodeAnalysisMain\x64\Debug\TestExecutive.exe
+24>  TestExecutive.vcxproj -> C:\Users\Madhusudhan\Desktop\Extremely Important copy\nextversion\CodeAnalysisMain\CodeAnalysisMain\x64\Debug\TestExecutive.pdb (Full PDB)
+========== Rebuild All: 24 succeeded, 0 failed, 0 skipped ==========

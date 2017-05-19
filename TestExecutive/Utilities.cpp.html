@@ -1,0 +1,156 @@
+ <html> <head> <style> 
+ body  { margin:20px; color:black;background-color:#eee;font-family:Consolas; font-weight:600; font-size:110%;} 
+ </style>  
+ </head> <body> <h4>Utilities.cpp<br> Dependent files : 
+<h4> <a href = "Utilities.h.html">Utilities.h </a> </h4>
+<PRE>
+///////////////////////////////////////////////////////////////////////
+// Utilities.cpp - small, generally usefule, helper classes          //
+// ver 1.4                                                           //
+// Language:    C++, Visual Studio 2015                              //
+// Platform:    Dell XPS 8900, Windows 10                            //
+// Application: Most Projects, CSE687 - Object Oriented Design       //
+// Author:      Jim Fawcett, Syracuse University, CST 4-187          //
+//              jfawcett@twcny.rr.com                                //
+///////////////////////////////////////////////////////////////////////
+
+//#include &lt;cctype&gt;
+#include &lt;iostream&gt;
+#include &lt;iomanip&gt;
+#include &lt;locale&gt;
+#include &lt;clocale&gt;
+#include "Utilities.h"
+
+using namespace Utilities;
+
+/*
+*  Note: 
+*  The std::string src argument must be pass by value so that we can pass
+*  std::ostringstream.out() to the first argument and std::ostringstream out
+*  to the last argument, e.g., the same std::ostringstream object for both
+*  arguments.  Otherwise we attempt to insert out's string into itself.
+*/
+void StringHelper::Title(std::string src, std::ostream& out)
+{
+  out &lt;&lt; "\n  " &lt;&lt; src;
+  out &lt;&lt; "\n " &lt;&lt; std::string(src.size() + 2, '=');
+}
+
+void StringHelper::Title(std::string src, std::ostringstream& out)
+{
+  out.str("");
+  out &lt;&lt; "\n  " &lt;&lt; src;
+  out &lt;&lt; "\n " &lt;&lt; std::string(src.size() + 2, '=');
+}
+
+void StringHelper::title(std::string src, std::ostream& out)
+{
+  out &lt;&lt; "\n  " &lt;&lt; src;
+  out &lt;&lt; "\n " &lt;&lt; std::string(src.size() + 2, '-');
+}
+
+void StringHelper::title(std::string src, std::ostringstream& out)
+{
+  out.str("");
+  out &lt;&lt; "\n  " &lt;&lt; src;
+  out &lt;&lt; "\n " &lt;&lt; std::string(src.size() + 2, '-');
+}
+
+void StringHelper::sTitle(std::string src, size_t offset, size_t width, std::ostream& out, char underline)
+{
+  if (width &lt; src.size())
+    width = src.size();
+  size_t lwidth = (width - src.size()) / 2;
+  out &lt;&lt; "\n  " &lt;&lt; std::setw(offset) &lt;&lt; "" &lt;&lt; std::setw(lwidth) &lt;&lt; " " &lt;&lt; src;
+  out &lt;&lt; "\n " &lt;&lt; std::setw(offset) &lt;&lt; "" &lt;&lt; std::string(width + 2, underline);
+}
+
+void StringHelper::sTitle(std::string src, size_t offset, size_t width, std::ostringstream& out, char underline)
+{
+  out.str("");
+  if (width &lt; src.size())
+    width = src.size();
+  size_t lwidth = (width - src.size()) / 2;
+  out &lt;&lt; "\n  " &lt;&lt; std::setw(offset) &lt;&lt; "" &lt;&lt; std::setw(lwidth) &lt;&lt; " " &lt;&lt; src;
+  out &lt;&lt; "\n " &lt;&lt; std::setw(offset) &lt;&lt; "" &lt;&lt; std::string(width + 2, underline);
+}
+
+std::vector&lt;std::string&gt; StringHelper::split(const std::string& src)
+{
+  std::vector&lt;std::string&gt; accum;
+  std::string temp;
+  std::locale loc;
+  size_t index = 0;
+  do
+  {
+    while ((isspace(src[index], loc) || src[index] == ',') && src[index] != '\n')
+    {
+      ++index;
+      if (temp.size() &gt; 0)
+      {
+        accum.push_back(temp);
+        temp.clear();
+      }
+    }
+    if(src[index] != '\0')
+      temp += src[index];
+  } while (index++ &lt; src.size());
+  if(temp.size() &gt; 0)
+    accum.push_back(temp);
+  return accum;
+}
+
+void Utilities::putline()
+{
+  std::cout &lt;&lt; "\n";
+}
+
+
+#ifdef TEST_UTILITIES
+
+using Utils = Utilities::StringHelper;
+
+int main()
+{
+  Utils::Title("Testing Utilities Package");
+  putline();
+
+  Utils::title("test StringHelper::split(std::string)");
+
+  std::string test = "a, \n, bc, de, efg, i, j k lm nopq rst";
+  std::cout &lt;&lt; "\n  test string = " &lt;&lt; test;
+  
+  std::vector&lt;std::string&gt; result = StringHelper::split(test);
+  
+  std::cout &lt;&lt; "\n";
+  for (auto item : result)
+  {
+    if (item == "\n")
+      std::cout &lt;&lt; "\n  " &lt;&lt; "newline";
+    else
+      std::cout &lt;&lt; "\n  " &lt;&lt; item;
+  }
+  std::cout &lt;&lt; "\n";
+
+  Utils::title("test std::string Converter&lt;T&gt;::toString(T)");
+
+  std::string conv1 = Converter&lt;double&gt;::toString(3.1415927);
+  std::string conv2 = Converter&lt;int&gt;::toString(73);
+  std::string conv3 = Converter&lt;std::string&gt;::toString("a_test_string plus more");
+
+  std::cout &lt;&lt; "\n  Converting from values to strings: ";
+  std::cout &lt;&lt; conv1 &lt;&lt; ", " &lt;&lt; conv2 &lt;&lt; ", " &lt;&lt; conv3;
+  putline();
+
+  Utils::title("test T Converter&lt;T&gt;::toValue(std::string)");
+
+  std::cout &lt;&lt; "\n  Converting from strings to values: ";
+  std::cout &lt;&lt; Converter&lt;double&gt;::toValue(conv1) &lt;&lt; ", ";
+  std::cout &lt;&lt; Converter&lt;int&gt;::toValue(conv2) &lt;&lt; ", ";
+  std::cout &lt;&lt; Converter&lt;std::string&gt;::toValue(conv3);
+
+  std::cout &lt;&lt; "\n\n";
+  return 0;
+}
+#endif
+</PRE> </body> </html>

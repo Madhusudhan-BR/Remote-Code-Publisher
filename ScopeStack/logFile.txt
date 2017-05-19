@@ -1,0 +1,60 @@
+
+                                             CodeAnalysis
+    ==============================================================================================
+     Sat Aug 27 10:12:05 2016
+     Path: C:\SU\Repository\CodeAnalyzer\ScopeStack
+     Args: *.h, *.cpp, *.cs, /m, /r, /f
+                                                                               
+           Code Metrics - Start Line, Size (lines/code), and Complexity (number of scopes)
+    ==============================================================================================
+
+                 file name        type                               name    line    size    cplx
+    -----------------------  ----------  ---------------------------------  ------  ------  ------
+                             namespace                   Global Namespace       1       1      21
+
+                 file name        type                               name    line    size    cplx
+    -----------------------  ----------  ---------------------------------  ------  ------  ------
+              ScopeStack.h   namespace                       CodeAnalysis      54     114      17
+              ScopeStack.h       class                         ScopeStack      56      17       8
+              ScopeStack.h    function                               size      74       2       1
+              ScopeStack.h    function                              begin      77       2       1
+              ScopeStack.h    function                                end      80       2       1
+              ScopeStack.h    function                               push      85       3       1
+              ScopeStack.h    function                                pop      91       5       1
+              ScopeStack.h    function                                top      99       3       1
+              ScopeStack.h    function                          predOfTop     105       4       1
+              ScopeStack.h    function                          showStack     112      17       3
+              ScopeStack.h    function                          showStack     132      16       3
+              ScopeStack.h    function                           TreeWalk     152      15       2
+
+                 file name        type                               name    line    size    cplx
+    -----------------------  ----------  ---------------------------------  ------  ------  ------
+            ScopeStack.cpp      struct                            element      25      22       2
+              public data: std :: string type ; 
+              public data: std :: string name ; 
+              public data: size_t startLineCount = 0 ; 
+              public data: size_t endLineCount = 0 ; 
+              public data: std :: string path_ ; 
+            ScopeStack.cpp    function                               show      32      13       1
+            ScopeStack.cpp    function                               main      49      75       1
+
+                          Functions Exceeding Metric Limits and Public Data
+    ==============================================================================================
+                 file name        type                               name    line    size    cplx
+    -----------------------  ----------  ---------------------------------  ------  ------  ------
+            ScopeStack.cpp    function                               main      49      75       1
+
+              public data: ScopeStack.cpp : 26 - struct element
+                std :: string type ; 
+              public data: ScopeStack.cpp : 27 - struct element
+                std :: string name ; 
+              public data: ScopeStack.cpp : 28 - struct element
+                size_t startLineCount = 0 ; 
+              public data: ScopeStack.cpp : 29 - struct element
+                size_t endLineCount = 0 ; 
+              public data: ScopeStack.cpp : 30 - struct element
+                std :: string path_ ; 
+
+
+    searched     6 dirs
+   processed     2 files

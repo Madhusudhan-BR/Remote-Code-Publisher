@@ -1,0 +1,35 @@
+<!----------------------------------------------------------------------------..\Server\Repository\PublishedFiles\Category3\Test1.cpp.html - output HTML file for Project #3 Published 5 April 2017 Madhusudhan.B.R, CSE687 - Object Oriented Design, Spring 2017-----------------------------------------------------------------------------> <html> <head>
+ 
+    <link rel="stylesheet" type = "text/css"  href="stylesheet.css"/>  
+ <script type="text/javascript" src="script.js"></script></head> <body> <h4>Test1.cpp<br> Dependent files : 
+<PRE>
+
+// Test1.cpp
+
+#include "Test1.h"
+#include &lt;iostream&gt;
+#include &lt;sstream&gt;
+
+Test::Test1::Test1() {}
+
+Test::Test1::~Test1() {}
+
+template&lt;typename T&gt;
+std::string toString(const T& t)
+{
+  std::ostringstream out;
+  out &lt;&lt; t;
+  return out.str();
+}
+
+using namespace Scanner;
+
+#ifdef TEST_TEST1
+
+int main()
+{
+  SemiExp se1;
+  std::cout &lt;&lt; "\n  " &lt;&lt; toString&lt;size_t&gt;(se1.length());
+  std::cout &lt;&lt; "\n\n";
+}
+#endif</PRE> </body> </html>
